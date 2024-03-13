@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasty Bites</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <style>
+      .title1{
+        font-family:"satisfy";
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Menu -->
+    <div class="menu">
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <ion-icon name="grid-outline"></ion-icon>
+        </label>
+
+        <label class="logo">Tasty Bites</label>
+
+        <ul>
+          <li><a href="/" >Home</a></li>
+        
+          <li><a href="/Addrecepie">Add Recepies</a></li>
+          <li><a href="/recepies" class="active">Recepies</a></li>
+          <li><a href="/profile">Profile</a></li>
+
+        </ul>
+      </nav>
+    </div>
+
+    <div class="section" id="menu">
+        <div class="container">
+          <ul class="category">
+            
+          </ul>
+  
+          <!-- <div class="container">
+            <div class="restaurant-menu">
+              <% posts.forEach(function(post){ %>
+                  <div class="menu-item">
+                                  <img src="/images/uploads/<%= post.image %>" alt="" />
+                    
+                                  <div class="title"><%= post.title %></div>
+                    
+                    
+                                  <div class="order flex">
+                                    <div class="price">$25.00</div>
+                                    <a href="/description" class="btn btn-menu">Read More</a>
+                                  </div>
+                                </div>
+
+
+              <% })%>
+              
+   -->
+
+   <div class="container">
+    <div class="restaurant-menu">
+      <% posts.forEach((post, index) => { %>
+        <div class="menu-item">
+                <img src="/images/uploads/<%= post.image %>" alt="" />
+                <div class="title"><%= post.title %></div>
+                <p class="title1"><%= post.description %></p>
+                <div class="order flex">
+                    <div class="price">$25.00</div>
+                    <a href="/posts/<%= post.id %>" class="btn btn-menu">Read More</a>
+                  </div>
+            </div>
+        <% })%>
+    </div>
+</div>
+
+            
+            </div>
+          </div>
+       
+   
+</body>
+</html>

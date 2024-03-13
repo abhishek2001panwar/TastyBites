@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasty Bites</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <!-- Menu -->
+    <div class="menu">
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <ion-icon name="grid-outline"></ion-icon>
+        </label>
+
+        <label class="logo">Tasty Bites</label>
+
+        <ul>
+          <li><a href="#hero-section" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#testimonial">Reviews</a></li>
+          <li><a href="/recepies">Recepies</a></li>
+          <li><a href="/login">Login</a></li>
+          <li><a href="/contact">Contact </a></li>
+          <li><a href="#app">Download App</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- End Menu -->
+
+    <!-- Hero Section -->
+    <div class="section flex" id="hero-section">
+      <div class="text">
+        <h1 class="primary">
+          It's Not Just Food, <br />
+          It's an <span>Experience</span>
+        </h1>
+
+        <p class="tertiary">
+          Your culinary haven for diverse, delectable recipes. Join our vibrant community, explore global flavors, and unleash your inner chef. Let's cook, share, and savor together. Bon appétit!
+        </p>
+
+        <a href="/login" class="btn">Explore Menu</a>
+      </div>
+      <div class="visual">
+        <img src="https://raw.githubusercontent.com/programmercloud/foodlover/main/img/home-banner.png" alt="" />
+      </div>
+    </div>
+    <!-- End Hero Section -->
+
+    <!-- How It Works -->
+    <div class="section" id="how-it-works">
+      <h2 class="secondary">How It Works</h2>
+
+      <div class="container flex">
+        <div class="box">
+          <h3>Easy Recepies</h3>
+          <ion-icon name="timer-outline"></ion-icon>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+            non?
+          </p>
+        </div>
+
+        <div class="box active">
+          <h3>Quick Access</h3>
+          <ion-icon name="trophy-outline"></ion-icon>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+            non?
+          </p>
+        </div>
+
+        <div class="box">
+          <h3>Add Experience</h3>
+          <ion-icon name="checkmark-done-circle-outline"></ion-icon>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+            non?
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- End How It Works -->
+
+    <!-- About -->
+    <div class="section" id="about">
+      <div class="container flex">
+        <div class="visual">
+          <img src="https://raw.githubusercontent.com/programmercloud/foodlover/main/img/about.png" alt="" />
+        </div>
+        <div class="text">
+          <div class="secondary">About Our Tasty Bites</div>
+          <h2 class="primary">150+</h2>
+
+          <h3 class="tertiary">Our Delicious Food recepies</h3>
+
+          <p>
+            TastyBites: A culinary haven offering delectable recipes and cooking inspiration. Join our community to explore diverse flavors, share cooking adventures, and create delicious memories together. Welcome to the taste revolution!
+          </p>
+
+          <a href="/login" class="btn">Explore Menu</a>
+        </div>
+      </div>
+    </div>
+    <!-- End About -->
+
+    <!-- Restaurant Menu -->
+    <!-- <div class="section" id="menu">
+      <div class="container">
+        <ul class="category">
+          <li class="active">All</li>
+          <li>Biryani</li>
+          <li>Chicken</li>
+          <li>Pizza</li>
+          <li>Burger</li>
+          <li>Pasta</li>
+        </ul>
+
+        <div class="container">
+          <div class="restaurant-menu">
+            <div class="menu-item">
+              <img src="https://raw.githubusercontent.com/programmercloud/foodlover/main/img/menu-1.jpg" alt="" />
+
+              <div class="title">Food Restaurant | Chineese & Thai</div>
+
+              <div class="location">Lahore, Pakistan</div>
+
+              <div class="order flex">
+                <div class="price">$25.00</div>
+                <a href="#" class="btn btn-menu">Order Now</a>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <img src="https://raw.githubusercontent.com/programmercloud/foodlover/main/img/menu-2.jpg" alt="" />
+
+              <div class="title">Food Restaurant | Chineese & Thai</div>
+
+              <div class="location">Lahore, Pakistan</div>
+
+              <div class="order flex">
+                <div class="price">$25.00</div>
+                <a href="#" class="btn btn-menu">Order Now</a>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <img src="https://raw.githubusercontent.com/programmercloud/foodlover/main/img/menu-3.jpg" alt="" />
+
+              <div class="title">Food Restaurant | Chineese & Thai</div>
+
+              <div class="location">Lahore, Pakistan</div>
+
+              <div class="order flex">
+                <div class="price">$25.00</div>
+                <a href="#" class="btn btn-menu">Order Now</a>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <img src="https://raw.githubusercontent.com/programmercloud/foodlover/main/img/menu-4.jpg" alt="" />
+
+              <div class="title">Food Restaurant | Chineese & Thai</div>
+
+              <div class="location">Lahore, Pakistan</div>
+
+              <div class="order flex">
+                <div class="price">$25.00</div>
+                <a href="#" class="btn btn-menu">Order Now</a>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <img src="https://raw.githubusercontent.com/programmercloud/foodlover/main/img/menu-5.jpg" alt="" />
+
+              <div class="title">Food Restaurant | Chineese & Thai</div>
+
+              <div class="location">Lahore, Pakistan</div>
+
+              <div class="order flex">
+                <div class="price">$25.00</div>
+                <a href="#" class="btn btn-menu">Order Now</a>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <img src="https://raw.githubusercontent.com/programmercloud/foodlover/main/img/menu-6.jpg" alt="" />
+
+              <div class="title">Food Restaurant | Chineese & Thai</div>
+
+              <div class="location">Lahore, Pakistan</div>
+
+              <div class="order flex">
+                <div class="price">$25.00</div>
+                <a href="#" class="btn btn-menu">Order Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- End Restaurant Menu -->
+
+    <!-- Testimonial -->
+    <div class="section" id="testimonial">
+      <div class="container flex">
+        <div class="text">
+          <h2 class="secondary">What people say about Tasty Bites</h2>
+          <p>
+            "TastyBites has transformed my cooking experience! The recipes are easy to follow, and the flavors are outstanding. I love being part of this vibrant culinary community."
+          </p>
+
+          <div class="user flex">
+            <!-- <img src="https://raw.githubusercontent.com/programmercloud/foodlover/main/img/client.jpg" alt="" /> -->
+
+            <!-- <div class="name">
+              <div class="title">John Smith</div>
+              <div class="location">Lahore, Pakistan</div>
+            </div> -->
+          </div>
+        </div>
+        <div class="visual">
+          <img src="https://raw.githubusercontent.com/programmercloud/foodlover/main/img/testimonial.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- End Testimonial -->
+
+    <!-- FAQ -->
+    <div class="section" id="faq">
+      <h2 class="secondary">Frequently Asked Questions</h2>
+
+      <div class="faq">
+          <details>
+              <summary>What we offer's to you?</summary>
+              <div class="content">
+                  <p>
+                    "TastyBites offers delicious recipes, culinary inspiration, cooking tips, vibrant community, and a flavorful journey of culinary exploration."                  </p>
+              </div>
+          </details>
+
+          <details>
+              <summary>How can I contribute to tasty bites?</summary>
+              <div class="content">
+                  <p>
+                    "You can contribute to TastyBites by submitting your own recipes, sharing cooking tips, engaging with the community, and providing feedback."                  </p>
+              </div>
+          </details>
+
+          <details>
+              <summary>Are your recepies locally sourced?</summary>
+              <div class="content">
+                  <p>
+                    "Yes, whenever possible, our recipes prioritize locally sourced ingredients to ensure freshness, support local producers, and promote sustainability."                  </p>
+              </div>
+          </details>
+
+          <details>
+              <summary>Do you offer vegetarian/vegan recepies?</summary>
+              <div class="content">
+                  <p>
+                    "Yes, we offer a wide range of vegetarian and vegan recipes to cater to different dietary preferences and promote healthy, plant-based eating."                  </p>
+              </div>
+          </details>
+      </div>
+  </div>
+    <!-- End FAQ -->
+
+    <!-- App -->
+    <div class="section" id="app">
+      <div class="container flex">
+        <div class="visual">
+          <img src="https://raw.githubusercontent.com/programmercloud/foodlover/main/img/app.png" alt="" />
+        </div>
+
+        <div class="text">
+          <h2 class="secondary">Download The Tasty Bites App</h2>
+          <p>
+            "Experience culinary delight anytime, anywhere! Download the TastyBite app for a diverse range of recipes, cooking tips, and inspiration. Join our community and savor the joy of cooking on-the-go!"
+          </p>
+
+          <div class="download flex">
+            <div class="app-store">
+              <ion-icon name="logo-google-playstore"></ion-icon>
+              <p>
+                GET IT ON <br />
+                <span>Google Play</span>
+              </p>
+            </div>
+
+            <div class="app-store">
+              <ion-icon name="logo-apple"></ion-icon>
+              <p>
+                Donload on the <br />
+                <span>App Store</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End App -->
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container flex">
+        <div class="footer-about">
+          <h2>About</h2>
+          <p>
+            **About Us (Footer Section):**
+
+            Indulge in culinary excellence with [Your Company Name], where passion meets perfection. Discover a world of flavors, crafted with care by our team of dedicated food connoisseurs. Join us on a journey of gastronomic delight!
+          </p>
+        </div>
+
+        <div class="footer-category">
+          <h2>Our Menu</h2>
+
+          <ul>
+            <li>Biryani</li>
+            <li>Chicken</li>
+            <li>Pizza</li>
+            <li>Burger</li>
+            <li>Pasta</li>
+          </ul>
+        </div>
+
+        <div class="quick-links">
+          <h2>Quick Links</h2>
+
+          <ul>
+            <li>About Us</li>
+            <li>Contact Us</li>
+            <li>Menu</li>
+            <li>Order</li>
+            <li>Services</li>
+          </ul>
+        </div>
+
+        <div class="get-in-touch">
+          <h2>Get in touch</h2>
+          <ul>
+            <li>Account</li>
+            <li>Support Center</li>
+            <li>Feedback</li>
+            <li>Suggession</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>Copyright &copy; 2022. All Rights Reserved.</p>
+      </div>
+    </div>
+    
+           <!--   BTN   -->
+   
+</a>
+    <!-- End Footer -->
+
+    <!-- Ion Icons Js -->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
+    ></script>
+  </body>
+</html>

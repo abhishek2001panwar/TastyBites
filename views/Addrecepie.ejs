@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tasty Bites- Add Recipe</title>
+    <link rel="stylesheet" href="/stylesheets/Addrecepi.css">
+<style>
+
+</style>
+</head>
+<body>
+
+    <div class="menu">
+        <nav>
+         
+  
+          <label class="logo">Tasty Bites</label>
+  
+          <ul>
+            <li><a href="/">Home</a></li>
+        
+            <li><a href="/Addrecepie" class="actives ">Add Recepies</a></li>
+            <li><a href="/recepies">Recepies</a></li>
+          </ul>
+        </nav>
+      </div>
+    <div class="container">
+        <h1>Add New Recipe</h1>
+        <form action="/createrecepie" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="recipeName">Recipe Name:</label>
+                <input type="text" id="recipeName" name="title" required>
+            </div>
+            <div class="form-group">
+                <label for="recipeImage">Recipe Image:</label>
+                <input type="file" id="recipeImage" name="postimage"required>
+             
+            </div>
+            <div class="form-group">
+                <label for="recipeDescription">Recipe Description:</label>
+                <textarea id="recipeDescription" name="description" rows="6" required></textarea>
+            </div>
+            <button type="submit">Add Recipe</button>
+        </form>
+    </div>
+</body>
+</html>

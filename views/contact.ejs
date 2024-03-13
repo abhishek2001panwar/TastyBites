@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* font */
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Lato&family=Poppins:wght@300&family=Roboto:wght@300;400&family=Satisfy&display=swap');
+/* background */
+body {
+  background-color: #f1c497;
+  font-family: 'Dancing Script', serif;
+}
+/* title */
+h1 {
+  font-family: 'Dancing Script', serif;
+  letter-spacing: 0.5px;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+/* subtitle */
+h2 {
+  margin-top: 0px;
+  font-family: 'Dancing script', serif;
+  letter-spacing: 0.5px;
+  font-size: 10px;
+}
+/* image */
+img {
+  height: 100%;
+}
+/* inputs */
+input {
+  margin-bottom:10px;
+}
+textarea {
+  height:100px;
+  margin-bottom:10px;
+}
+input:first-of-type
+{
+  margin-top:35px;
+}
+input, textarea {
+  font-size: 10px;
+  padding: 15px 10px 10px;
+  font-family: 'Roboto', serif;
+  border: 1px solid #cecece;
+  background: #F3F5F6;
+  color:#4c4c4c;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 80%;
+  max-width: 600px;
+}
+::-webkit-input-placeholder {
+   color: #4c4c4c;
+}
+:-moz-placeholder {
+   color: #4c4c4c;  
+}
+::-moz-placeholder {
+   color: #4c4c4c; 
+}
+:-ms-input-placeholder {  
+   color: #4c4c4c;  
+}
+/* button */
+button {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  background-color: #ffbe5e;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 70px;
+  padding-left: 35px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #CBDFE0;
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+  width: 30%;
+  color: #fff;
+}
+button:hover {
+  background:#CBDFE0;
+}
+.button {
+  display: inline-block;
+   text-align: center;
+  margin-left: 55px;
+}
+.message {
+    font-family: 'Roboto', serif;
+    font-size:1.1em;
+    display:none;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color:#2ABCA7;
+    width: 80%;
+    margin:auto;
+    color: #FAFAFA;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    border-radius:6px;
+}
+/* containers */
+.title-container {
+  text-align: center;
+  height: 60px;
+  width: 300px;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 90px;
+}
+.container {
+  height: 350px;
+  width: 692px;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 90px;
+  bottom: 0;
+  background-color: #fff;
+}
+.image-container {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  border-radius: 16px 16px 0px 0px;
+}
+.image-container img  {
+  
+  border-radius: 16px 16px 0px 0px;
+}
+.text-container {
+  position: absolute;
+  height: 100%;
+  width: 45%;
+  right: 0;
+  margin: auto;
+  margin-left: 20px;
+}
+.gray-block {
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  background-color: #E3E8EB;
+}
+#heading{
+    text-decoration: none;
+    font-family: "Dancing Script";
+color: black;
+animation: fadeIn 1s ease-in; /* Apply the fadeIn animation over 1 second */
+
+}
+@keyframes fadeOut {
+            from {
+                opacity: 1; /* Start with full visibility */
+            }
+            to {
+                opacity: 0; /* Fade to transparency */
+            }
+        }
+        body.fade-out #heading {
+            animation: fadeOut 1s ease-out; /* Apply the fadeOut animation when body has fade-out class */
+        }
+@keyframes fadeIn {
+            from {
+                opacity: 0; /* Start with transparency */
+            }
+            to {
+                opacity: 1; /* Fade to full visibility */
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- background --> 
+<div class="gray-block"></div>
+<!-- title -->
+ <a id="heading" href="/" ><h1>TastyBites</h1></a>
+<div id="tc" class="title-container">
+  <h1>Let's get started</h1>
+  <h2>For a better, healthier future.</h2>
+</div>
+<!-- main container -->
+<div id="c" class="container">
+  <!-- image -->
+  <div class="image-container">
+    <img src="http://res.cloudinary.com/oscartbeamish/image/upload/v1504172576/14bc155f03a9be4e10c0bd6d34067f6e_ng1urv.jpg">
+  </div>
+  <!-- text -->
+  <div class="text-container">
+    <!-- name input -->
+    <form action="/contact_submit" method="post">
+        <input type="text" name="name" placeholder="Name" /><br/>
+        <!-- email input -->
+        <input  type="email" name="email" placeholder="Email" /><br/>
+        <!-- message input -->
+        <textarea type="text" name="message" placeholder="Message"></textarea><br/>
+        <!-- sent -->
+        <div class="message">Message Sent</div>
+        <div class="button">
+          <!-- button -->
+        <button id="submit" type="submit">
+          Send
+        </button>
+
+    </form>
+   
+    </div>
+  </div>
+</div>
+</body>
+</html>

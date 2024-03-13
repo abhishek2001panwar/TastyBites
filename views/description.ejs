@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tasty Bites-Recipe Details</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Lato&family=Poppins:wght@300&family=Roboto:wght@300;400&family=Satisfy&display=swap');
+
+        body {
+    font-family: "satisfy", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.recipe-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-title {
+    text-align: center;
+}
+
+.recipe-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.recipe-description {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.recipe-description h2 {
+    margin-bottom: 10px;
+}
+.go-back-btn {
+    font-family: "satisfy";
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #FFA500;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.go-back-btn:hover {
+    background-color: #fffdfb;
+    color: black;
+}
+    </style>
+</head>
+<body>
+ 
+    
+     <div class="recipe-container">
+            <div class="recipe-item">
+                <h1 class="recipe-title"><%= post.title %></h1>
+                <img src="/images/uploads/<%= posts.image %>" alt="Recipe Image" class="recipe-image">
+                <div class="recipe-description">
+                    <h2>Description</h2>
+                    <p><%= post.description %></p>
+                </div>
+                <button class="go-back-btn" onclick="goBack()">Go Back</button>
+
+            </div>
+    </div>
+    
+         <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+  
+</body>
+</html>
